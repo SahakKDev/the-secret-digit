@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(62, 62, 62);
+  color: #f6f6f6;
+}
+
+.header {
+  border-bottom: 3px solid #aaa;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.header-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 9rem;
+}
+
+.title {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.between {
+  font-size: 1.5rem;
+}
+
+.box {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  background: #fafafa;
+  color: black;
+}
+
+main.container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+main.container > div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.action-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+  gap: 1rem;
+}
+
+.submit {
+  width: 7.5rem;
+}
+
+.info-text {
+  font-size: 2rem;
+}
+
+.score-text {
+  font-size: 1.5rem;
+}
+
+.high-score-text {
+  font-size: 1.5rem;
+}
+
+/* UTILS */
+.container {
+  padding: 1.5rem 3rem;
+  padding-bottom: 0;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+input {
+  width: 10rem;
+  height: 4rem;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 4px;
+}

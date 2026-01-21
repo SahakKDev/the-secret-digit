@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Secret Digit</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-info">
+          <button class="again">Again!</button>
+          <span class="between">(Between 1 and 20)</span>
+
+          <h1 class="title">The Secret Digit!</h1>
+        </div>
+      </div>
+      <div class="box">?</div>
+    </header>
+
+    <main class="container">
+      <div class="action-section">
+        <input type="number" />
+        <button class="submit">Check!</button>
+      </div>
+
+      <div class="result-section">
+        <span class="info-text">Start guessing...</span>
+
+        <p class="score-text">💯 Score: <span class="score">20</span></p>
+
+        <p class="high-score-text">
+          🏅 HighScore: <span class="high-score">0</span>
+        </p>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
