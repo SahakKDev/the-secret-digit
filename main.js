@@ -52,7 +52,6 @@ restartButton.addEventListener("click", startNewGame);
 
 function startNewGame() {
   SECRET_NUMBER = Math.trunc(Math.random() * 20) + 1;
-  console.log(SECRET_NUMBER);
   secretBox.textContent = "?";
   infoLabel.textContent = "Start guessing...";
   secretNumberInput.disabled = false;
