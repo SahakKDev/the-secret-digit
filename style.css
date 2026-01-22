@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -16,9 +16,16 @@ body {
 }
 
 .header {
-  border-bottom: 3px solid #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   position: relative;
-  margin-bottom: 5rem;
+
+  padding: 1.5rem 3rem 15rem;
+  max-width: 80rem;
+  margin: 0 auto 7rem;
+  border-bottom: 3px solid #f6f6f6;
 }
 
 .header-info {
@@ -34,17 +41,21 @@ body {
   flex-basis: 100%;
   text-align: center;
   font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.between {
+.header .label {
   font-size: 1.5rem;
 }
 
-.box {
+.secret-box {
   position: absolute;
-  bottom: -3rem;
+  bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 3.5rem);
   width: 7rem;
   height: 7rem;
   border: 1px solid #fff;
@@ -55,6 +66,13 @@ body {
   font-size: 3.5rem;
   background: #fafafa;
   color: black;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25%;
 }
 
 main.container {
@@ -76,6 +94,11 @@ main.container > div {
   gap: 2rem;
 }
 
+.secret-number-input {
+  font-family: inherit;
+  font-size: 2.5rem;
+}
+
 .result-section {
   display: flex;
   flex-direction: column;
@@ -84,29 +107,19 @@ main.container > div {
   gap: 1rem;
 }
 
-.submit {
-  width: 7.5rem;
-}
-
-.info-text {
+.info-label {
   font-size: 2rem;
 }
 
-.score-text {
+.score-label {
   font-size: 1.5rem;
 }
 
-.high-score-text {
+.high-score-label {
   font-size: 1.5rem;
 }
 
 /* UTILS */
-.container {
-  padding: 1.5rem 3rem;
-  padding-bottom: 0;
-  max-width: 80rem;
-  margin: 0 auto;
-}
 
 button {
   padding: 0.5rem 0.75rem;

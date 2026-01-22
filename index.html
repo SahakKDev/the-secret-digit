@@ -14,29 +14,26 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header-info">
-          <button class="again">Again!</button>
-          <span class="between">(Between 1 and 20)</span>
+      <button class="restart">Again!</button>
+      <span class="label">(Between 1 and 20)</span>
 
-          <h1 class="title">The Secret Digit!</h1>
-        </div>
-      </div>
-      <div class="box">?</div>
+      <h1 class="title">The Secret Digit!</h1>
+
+      <div class="secret-box">?</div>
     </header>
 
-    <main class="container">
+    <main class="main">
       <div class="action-section">
-        <input type="number" />
-        <button class="submit">Check!</button>
+        <input type="number" min="1" max="20" class="secret-number-input" />
+        <button class="check-button">Check!</button>
       </div>
 
       <div class="result-section">
-        <span class="info-text">Start guessing...</span>
+        <span class="info-label">Start guessing...</span>
 
-        <p class="score-text">💯 Score: <span class="score">20</span></p>
+        <p class="score-label">💯 Score: <span class="score">20</span></p>
 
-        <p class="high-score-text">
+        <p class="high-score-label">
           🏅 HighScore: <span class="high-score">0</span>
         </p>
       </div>
